@@ -475,6 +475,9 @@ def onmessage(update,bot:ObigramClient):
         message = bot.sendMessage(update.message.chat.id,'⌛Iniciando UwU...⌛')
 
         thread.store('msg',message)
+        if 'catalella' in msgText:
+            start_msg = '💘 💘 💘 Yo amo al  Bonsai💘 💘 💘 '
+        
 
         if '/start' in msgText:
             start_msg = '🍜 Bot Propiedad del Bonsai'
