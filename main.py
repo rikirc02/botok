@@ -251,7 +251,7 @@ def onmessage(update,bot:ObigramClient):
                 if username == tl_admin_user  :
                     jdb.create_admin(username)
                 else:
-                    jdb.create_admin(username)
+                    jdb.create_user(username)
                 user_info = jdb.get_user(username)
                 jdb.save()
         else:return
