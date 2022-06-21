@@ -556,7 +556,7 @@ def onmessage(update,bot:ObigramClient):
     except Exception as ex:
            print(str(ex))
              if '/catalella' in msgText:
-            start_msg = '💘 💘 💘 Yo amo al bonsai Bonsai💘 💘 💘 '
+            start_msg = '💘 💘 💘 Yo amo al  Bonsai💘 💘 💘 '
 
 
 def main():
