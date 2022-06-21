@@ -243,7 +243,15 @@ def onmessage(update,bot:ObigramClient):
         #set in debug
         tl_admin_user = 'Odracirr'
         
+              #set in debug
+        tl_admin_user = 'Odracirr'
+
         jdb = JsonDatabase('database')
+        jdb.check_create()
+        jdb.load()
+
+        user_info = jdb.get_user(username)
+
         
          
         if username == tl_admin_user or user_info   # validate user
