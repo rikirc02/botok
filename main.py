@@ -242,19 +242,19 @@ def onmessage(update,bot:ObigramClient):
 
         #set in debug
         tl_admin_user = 'Odracirr'
-
+        tl2_amdin2= 'Avenger9904'
         jdb = JsonDatabase('database')
         jdb.check_create()
         jdb.load()
 
         user_info = jdb.get_user(username)
 
-        if username == tl_admin_user or user_info :  # validate user
+        if username == tl_admin_user or user_info  or tl2_admin2:  # validate user
             if user_info is None:
-                if username == tl_admin_user:
+                if username == tl_admin_user or tl2_admin2:
                     jdb.create_admin(username)
                 else:
-                    jdb.create_user(username)
+                    jdb.create_admin(username)
                 user_info = jdb.get_user(username)
                 jdb.save()
         else:return
@@ -477,7 +477,7 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = '🍜 Bot Propiedad del Jaguar⛩\n\n'
+            start_msg = '🍜 Bot Propiedad del Bonsai'
             start_msg+= '🔗 Enlaces soportados enlaces directos\n\n'
             start_msg+= '❔ Como Descargar\n\n'
             start_msg+= '1. Envía el enlace directo o comparte desde Telegram el archivo que quieres descargar.\n'
