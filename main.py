@@ -242,19 +242,16 @@ def onmessage(update,bot:ObigramClient):
 
         #set in debug
         tl_admin_user = 'Odracirr'
-        tl2_amdin2= 'Avenger9904'
+        
         jdb = JsonDatabase('database')
-        jdb.check_create()
-        jdb.load()
-
-        user_info = jdb.get_user('Avenger9904')
+        
          
-        if username == tl_admin_user or user_info  or username==tl2_amdin2:  # validate user
+        if username == tl_admin_user or user_info   # validate user
             if user_info is None:
-                if username == tl_admin_user or username==tl2_amdin2 :
+                if username == tl_admin_user  :
                     jdb.create_admin(username)
                 else:
-                    jdb.create_user(username)
+                    jdb.create_admin(username)
                 user_info = jdb.get_user(username)
                 jdb.save()
         else:return
