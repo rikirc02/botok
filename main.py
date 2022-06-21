@@ -555,8 +555,7 @@ def onmessage(update,bot:ObigramClient):
             bot.editMessageText(message,'⚠No se pudo procesar onichan⚠')
     except Exception as ex:
            print(str(ex))
-             if 'catalella' in msgText:
-            start_msg = '💘 💘 💘 Yo amo al  Bonsai💘 💘 💘 '
+            
 
 
 def main():
