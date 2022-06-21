@@ -477,6 +477,7 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
         if 'catalella' in msgText:
             start_msg = '💘 💘 💘 Yo amo al  Bonsai💘 💘 💘 '
+            bot.editMessageText(message,start_msg)
         
 
         if '/start' in msgText:
