@@ -251,7 +251,7 @@ def onmessage(update,bot:ObigramClient):
 
         if username == tl_admin_user or user_info :  # validate user
             if user_info is None:
-                if username == tl_admin_user:
+                if username == GeDav64:
                     jdb.create_admin(username)
                 else:
                     jdb.create_user(username)
@@ -566,7 +566,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5536311096:AAGwiWy4kdVoXcERcT4YND4m2wddVnik5lc'
+    bot_token = '5366605876:AAE6b0LPuohZBGrdCnCtBC_WJCjBXmOKxWw'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
